@@ -12,6 +12,7 @@ public class WorkerDemo
       
       // Create a ProductionWorker object and pass the initialization
       // data to the constructor.
+      Employee test = new Employee("Billy","","11/20/2052");
       ProductionWorker pw =
            new ProductionWorker("John Smith", "123-A", "11-15-2005",
                                 ProductionWorker.DAY_SHIFT, 16.50);
@@ -29,7 +30,9 @@ public class WorkerDemo
       pw2.setShift(ProductionWorker.NIGHT_SHIFT);
       pw2.setPayRate(18.50);
       
+      
       // Display the data.
+      System.out.println(test.isValidEmpNum(test.getEmployeeNumber()));
       System.out.println("\nHere's the second production worker.");
       System.out.println(pw2);
    }
