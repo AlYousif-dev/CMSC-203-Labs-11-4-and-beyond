@@ -74,7 +74,7 @@ public class Employee {
     }
 
     //Helper method to validate employee number.
-    private boolean isValidEmpNum(String e) {
+    public boolean isValidEmpNum(String e) {
         return e != null && !e.isEmpty();
     }
 
